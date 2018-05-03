@@ -7,17 +7,19 @@ class SessionsController < ApplicationController
 
  	user = User.find_by(id: params[:session][:id])
    if user 
-     # Log the user in and redirect to the user's show page.
-     redirect_to user
+    	log_in user
+     	redirect_to user
    else
-     flash[:danger] = 'Invalid email/password combination' # Not quite right!
      render 'new'
    end
 
   end
 
   def destroy
-  	
+  	log_out
+    redirect_to root_url
+
   end
+
   
 end

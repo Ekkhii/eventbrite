@@ -1,0 +1,18 @@
+<h1>Crée ton evenement</h1>
+
+coucou : <%= @current_user %><br>
+salut : <%= @user_id %>
+
+<%= form_tag events_create_path, method: "post" do %>
+		<p>Decription :
+	    <input type="text" name="description" /></p>
+	    <p>
+	    	Place
+	    	<input type="text" name="place">
+	    </p>
+	    <p>
+	    	Date
+	    	<input type="date" name="date">
+	    </p>
+	    <input type="submit" value="Envoyer" class="btn btn-success" />
+   <% end %>

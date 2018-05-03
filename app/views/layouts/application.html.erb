@@ -19,10 +19,14 @@
           <a class="navbar-brand" href="#">WebSiteName</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
+          <li><a href="/">Home</a></li>
+          <% if logged_in? %>
+            <li><%= link_to"Créer un evenement", events_new_path %></li>
+            <li><%= link_to "Se deconnecter", logout_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to "Se connecter", login_path %></li>
+            <li><%= link_to "Créer un utilisateur", new_user_path %></li>
+          <% end %>
         </ul>
       </div>
     </nav>

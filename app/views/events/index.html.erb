@@ -1,0 +1,12 @@
+<h1>Tous les Evenements</h1>
+
+<p>
+	<% @event.each do |e| %>
+	<p>Evenement</p>
+	<%= e.description %><br>
+	<%= e.place %><br>
+	<%= e.date %><br>
+	<%= e.creator_id %><br>
+	<a href="/events/<%= e.id %>">Lien</a>
+	<% end %>
+</p>

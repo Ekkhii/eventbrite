@@ -1,3 +1,23 @@
 <h1>Mon compte</h1>
 
 <p><%= @user.name %></p>
+
+<h2>Evenements crées</h2>
+
+
+
+<p>
+
+ <% @event.each do |e|%>
+
+ 	<% if e.creator_id == current_user.id %>
+ 		<p>L'evenement : 
+ 		<%= e.description %> se déroulera à 
+ 		<%= e.place %> le 
+ 		<%= e.date %></p>
+ 	
+ 	<% else %>
+
+ 		<% end %>
+ 	<% end %>
+</p>
