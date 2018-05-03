@@ -1,9 +1,13 @@
-<h1>Login</h1>
+<div class="container">
 
-<%= form_for(:session, url: login_path) do |f| %>
+	<h1>Login</h1>
 
-      <%= f.label :id %>
-      <%= f.text_field :id %>
+	<%= form_for(:session, url: login_path) do |f| %>
 
-      <%= f.submit "Se connecter", class: "btn btn-success" %>
-    <% end %>
+	      <%= f.label :id %>
+	      <%= f.text_field :id %>
+
+	      <%= f.submit "Se connecter", class: "btn btn-success" %>
+	    <% end %>
+
+</div>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+	get 'events/suscribe', to: 'events#suscribe'
 	
   	get 'events/new', to: 'events#new'
  	post 'events/create', to: 'events#create'

@@ -23,5 +23,10 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
     
   end
+
+  def suscribe
+    @event = Event.find(params[:id])
+    @event.inspect
+  end
  
 end

@@ -1,5 +1,13 @@
-<h1><%= @event.description %></h1>
+<div class="container">
 
-<p>Crée par <%= @event.creator.name %></p>
-<p>Le <%= @event.date %></p>
-<p>A <%= @event.place %></p>
+	<h1 class="row"><%= @event.description %></h1>
+
+	<p>Crée par <%= @event.creator.name %></p>
+	<p>Le <%= @event.date %></p>
+	<p>A <%= @event.place %></p>
+
+	<h1 class="row">Liste des invités</h1>
+
+	<h1 class="row">Tu veux rejoindre l'evenement ?</h1>
+	<a href="<%= events_suscribe_path %>" class="btn btn-lg btn-success">Rejoindre</a>
+</div>
