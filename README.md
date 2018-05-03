@@ -5,7 +5,7 @@ A LIRE PLEASE
 Berangere @ekkhi
 Manu @tinoun
 
-Tout seul sur ce projet pour cause géographique 
+
 
 Lien de prod : https://mighty-hamlet-89187.herokuapp.com/
 
